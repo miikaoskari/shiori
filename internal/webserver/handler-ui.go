@@ -45,6 +45,10 @@ func (h *handler) serveJsFile(w http.ResponseWriter, r *http.Request, ps httprou
 		}
 	}
 
+	if jsFilePath == "/js/service_worker.js" {
+		w.Header().Add("Service-Worker-Allowed", "/")
+	}
+
 	err := serveFile(w, jsFilePath, true)
 	checkError(err)
 }

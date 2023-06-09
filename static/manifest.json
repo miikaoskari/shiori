@@ -1,0 +1,10 @@
+{
+    "name": "Shiori",
+    "short_name": "Shiori",
+    "theme_color": "#f44336",
+    "background_color": "#f44336",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

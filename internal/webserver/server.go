@@ -175,6 +175,7 @@ func ServeApp(cfg Config) error {
 	}
 
 	router.GET(jp("/js/*filepath"), withLogging(hdl.serveJsFile))
+	router.GET(jp("/service_worker.js"), withLogging(hdl.serveJsFile))
 	router.GET(jp("/res/*filepath"), withLogging(hdl.serveFile))
 	router.GET(jp("/css/*filepath"), withLogging(hdl.serveFile))
 	router.GET(jp("/fonts/*filepath"), withLogging(hdl.serveFile))
